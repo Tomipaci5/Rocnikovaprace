@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2f4f7f; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-image: linear-gradient(to bottom, #2f4f7f, #3498db); 
+}
+
+.container {
+    max-width: 600px; 
+    padding: 40px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+h1 {
+    margin-bottom: 40px; 
+    font-size: 72px; 
+    color: #333; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+}
+
+.word-display {
+    font-size: 48px; 
+    letter-spacing: 10px; 
+    margin: 20px 0; 
+    color: black; 
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px; 
+    background-color: #f0f0f0; 
+}
+
+.attempts {
+    font-size: 24px; 
+    margin: 20px 0; 
+    color: #333; 
+}
+
+.available-letters {
+    font-size: 24px; 
+    margin: 20px 0; 
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-size: 18px; 
+}
+
+.reset-button:hover {
+    background-color: #0056b3; 
+}
+
+.result {
+    margin-top: 20px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+.link {
+    display: inline-block; 
+    margin-top: 20px; 
+    text-decoration: none; 
+    color: #007bff; 
+    font-weight: bold; 
+}
+
+.link:hover {
+    text-decoration: underline; 
+}
+
+.letter-button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.letter-button:hover {
+    background-color: #0056b3;
+}
+
+.letter-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

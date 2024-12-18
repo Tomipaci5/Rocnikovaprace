@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman</h1>
+        <div id="wordDisplay" class="word-display"></div>
+        <div id="attempts" class="attempts">Attempts Remaining: 5</div> 
+        <div class="letters-container">
+            <h2>Available Letters</h2>
+            <div id="availableLetters" class="available-letters"></div>
+        </div>
+        <div id="alphabet" class="alphabet"></div>
+        <button class="reset-button" onclick="resetGame()">Reset Game</button>
+        <button class="reset-button" onclick="giveHint()">Hint</button>
+        <div id="result" class="result"></div>
+        <a href="index.html" class="link">Go to Front page</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
