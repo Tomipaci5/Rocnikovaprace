@@ -15,48 +15,48 @@ Také mi vysvětlil, jak funkce fungují, a předal mi vědomosti ohledně scrip
 
 Stručné popisování funkcí v JavaScriptu u hry Hangman:
 
-startGame()
+startGame():
 Funkce spustí novou hru, tak že vybere náhodné slovo ze seznamu let words a resetuje proměnné.
 
-updateWordDisplay()
+updateWordDisplay():
 Funkce má za úkol zobrazit podtržítka za neuhádnutá písmena a zobrazovat uhodnutá písmena. Díky tomu je každé správně uhodnuté písmeno správně zařazeno.
 
-updateAvailableLetters()
+updateAvailableLetters():
 Zobrazuje seznam písmen, která nebyla použita, a zároveň filtruje písmena, která byla uhodnuta, tak aby hráč mohl vědět, která písmena použil a jaká mu zbývají.
 
-createAlphabet()
+createAlphabet():
 Tato funkce vytvoří tlačítko pro každé písmeno abecedy, aby mohla být použita k hraní. Každé tlačítko má přiřazenou funkci, která se aktivuje při stisknutí.
 
-guessLetter(guessedLetter)
+guessLetter(guessedLetter):
 Tato funkce má za úkol sledovat, zda je stisknuté písmeno ve slově; pokud není, sníží počet pokusů.
 
-updateAttemptsDisplay()
+updateAttemptsDisplay():
 Funkce má za úkol aktualizovat počet pokusů na stránce.
 
-disableLetterButton(letter)
+disableLetterButton(letter):
 Po stisknutí písmena funkce zakáže opakované stisknutí a zajistí tím, aby písmeno mohlo být stisknuto pouze jednou.
 
-checkGameStatus()
+checkGameStatus():
 Funkce kontroluje, zda je slovo uhodnuto, nebo jestli došly pokusy. Pokud je hra u konce, zobrazí zprávu o výhře nebo prohře.
 
-resetGame()
+resetGame():
 Funkce resetuje hru, vybere náhodné slovo ze seznamu, resetuje pokusy a funkčnost klávesnice.
 
-giveHint()
+giveHint():
 Funkce poskytne nápovědu, tak že zobrazí jedno písmeno a zajistí, že další nápověda už nebude moct být použita.
 
-Stručné popisování funkcí souboru tictactoe.js:
+Stručné popisování funkcí u piškvorek
 
-makeMove(index)
+makeMove(index):
 Funkce umožňuje provést tah hráče X na herní desce, pokud dané pole již není obsazeno. Po provedení tahu zkontroluje, zda hra má nebo nemá být ukončena, a dá prostor počítači na tah.
 
-computerMove()
+computerMove():
 Simuluje tah počítače a vybere náhodné pole, kde umístí symbol O. Zkontroluje výsledek a přepne na tah hráče.
 
-checkResult()
+checkResult():
 Kontroluje všechny výherní pozice (řádky, sloupce a diagonály). Pokud nějaký z hráčů vyhraje, ukončí hru a oznámí vítěze, případně remízu.
 
-resetGame()
+resetGame():
 Funkce resetuje herní desku, vymaže všechny symboly na polích, obnoví stav hry a nastaví hráče zpět na 'X'. Také resetuje text s výsledkem a připraví hru na nový zápas.
 
 Tento projekt mi dal celkově dost zabrat, protože jsem nebyl znalý v JavaScriptu, jak už jsem řekl. Matěj Vít i trochu ChatGPT mi zachránili život. Nabral jsem nové zkušenosti a rozhodně ve vývoji stránky hodlám pokračovat. Třeba někdy bude i online.
